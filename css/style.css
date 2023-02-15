@@ -36,7 +36,7 @@ h2{
 a{
     color: #5fd6c2;
     font-weight: regular;
-    text-decoration: none;
+    text-decoration: underline;
 }
 
 
@@ -86,12 +86,13 @@ footer{
     margin: 15px;
 } */
 
-nav ul li {
+nav > ul li {
     display: inline-block;
     margin: 5px;
     padding: 10px 15px;
     font-size: 18px;
     background-color: rgb(58, 58, 58);
+    text-decoration: none;
 }
 
 
