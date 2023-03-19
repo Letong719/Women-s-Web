@@ -180,9 +180,9 @@ img:hover{
 }
 
 
-@media screen and (max-width: 767px){
+@media screen and (max-width: 768px){
 
-	dl{
+    dl{
         background-image: url("/images/background.jpg");
         background-repeat: repeat;
     }
@@ -226,7 +226,7 @@ img:hover{
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
-      }
+    }
 
     dl > dd{
         border-bottom: none;
@@ -234,7 +234,7 @@ img:hover{
 
     dl > dd:nth-of-type(2n){
         border-bottom: 1px solid rgb(255, 255, 255);
-      }
+    }
 
     .container{
         display: grid;
@@ -246,7 +246,92 @@ img:hover{
         bottom: 0;
         left: 0;
         width: 100%;
+    }
+}
+
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    body{
+        padding: 20px;
+        background-color: #002a2ee8;
+        font-family: "Lora", serif;
+        font-size: 20px;
+        color:#d4f7e5;
+        font-weight: 50;
+    }
+    
+    p{
+        line-height: 1.5;
+        letter-spacing: 0.2px;
+        padding-top: 5px;
+        padding-bottom: 10px;
+    }
+
+    h1, h2{
+        color: #e9f7f0;
+        font-family: 'Raleway', sans-serif;;
+        font-size: 40px;
+        letter-spacing: 3px;
+        padding: 30px 0 15px 0;
+    }
+
+    h2{
+        font-size: 30px;
+    }
+
+    .skip{
+        font-size: 14px;
+        text-decoration: none;
+        color: rgb(183, 255, 182);
+    }
+
+    nav > ul li {
+        display: inline-block;
+        margin: 5px;
+        padding: 10px 15px;
+        font-size: 18px;
+        background-color: #002a2ee8;
+        text-decoration: none;
+    }
+    
+    .navlink{
+        text-decoration: none;
+        font-weight: 700;
+        font-family: Arial, sans-serif;
+    }
+    
+    .twocolumn {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+
+    .item:nth-child(2n) {
+        border-bottom: 1px solid rgb(255, 255, 255);
+        padding: 20px;
       }
 
-   
-} 
+    .item img{
+        width: 100%
+    }
+
+    body {
+        background: linear-gradient(-45deg, #f86033, #e73c7e, #0c789f, #139c7c);
+        background-size: 400% 400%;
+        animation: gradient 15s ease infinite;
+        background-attachment: fixed;
+      }
+      
+      @keyframes gradient {
+        0% {
+          background-position: 0% 50%;
+        }
+        50% {
+          background-position: 100% 50%;
+        }
+        100% {
+          background-position: 0% 50%;
+        }
+      }
+
+}
