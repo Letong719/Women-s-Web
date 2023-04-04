@@ -73,7 +73,7 @@ nav ul {
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-image: url(../images/gradient_bkg.jpeg);
+    background-image: url(../images/);
     background-size: cover;
 }
 
@@ -370,7 +370,6 @@ body {
     }
 
     
-    
     dl {
         display: flex;
         flex-wrap: wrap;
@@ -379,6 +378,7 @@ body {
     dt {
         flex: 1 0 20%;
         overflow: scroll;
+        word-break: break-all;
       }
     
     dd {
